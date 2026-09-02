@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel principal - Club Frontón Los Vascos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-layout">
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-logo"><img src="img/icons/logo.png" alt="" aria-hidden="true"></span>
+        <span>
+          Club Frontón
+          <span>Los Vascos</span>
+        </span>
+      </div>
+      <nav aria-label="Navegación principal">
+        <ul>
+          <li><a href="dashboard.html" aria-current="page"><img class="icon icon-light" src="img/icons/dashboard.png" alt="" aria-hidden="true"> Panel principal</a></li>
+          <li><a href="jugadores.html"><img class="icon icon-light" src="img/icons/group.png" alt="" aria-hidden="true"> Jugadores</a></li>
+          <li><a href="partidos.html"><img class="icon icon-light" src="img/icons/raquet.png" alt="" aria-hidden="true"> Partidos</a></li>
+        </ul>
+      </nav>
+      <div class="logout">
+        <a href="index.html">Cerrar sesión</a>
+      </div>
+    </aside>
+
+    <main class="content">
+      <div class="topbar">
+        <h1>Panel principal</h1>
+        <p class="user-info">
+          <button type="button" class="icon-btn" aria-label="Notificaciones">
+            <img class="icon" src="img/icons/bell.png" alt="" aria-hidden="true">
+          </button>
+          <img class="icon" src="img/icons/user.png" alt="" aria-hidden="true">
+          Jugador: Martín Etxeberria · Categoría Primera
+        </p>
+      </div>
+
+      <section aria-labelledby="resumen-heading">
+        <h2 id="resumen-heading" class="visually-hidden">Resumen</h2>
+        <div class="stats-grid">
+          <article class="stat-card">
+            <span class="stat-icon"><img class="icon" src="img/icons/history.png" alt="" aria-hidden="true"></span>
+            <p class="stat-value">42</p>
+            <p class="stat-label">Partidos jugados</p>
+          </article>
+          <article class="stat-card">
+            <span class="stat-icon"><img class="icon" src="img/icons/checked.png" alt="" aria-hidden="true"></span>
+            <p class="stat-value">27</p>
+            <p class="stat-label">Victorias</p>
+          </article>
+          <article class="stat-card">
+            <span class="stat-icon"><img class="icon" src="img/icons/trophy.png" alt="" aria-hidden="true"></span>
+            <p class="stat-value">3°</p>
+            <p class="stat-label">Ranking del club</p>
+          </article>
+          <article class="stat-card">
+            <span class="stat-icon"><img class="icon" src="img/icons/calendar.png" alt="" aria-hidden="true"></span>
+            <p class="stat-value">2</p>
+            <p class="stat-label">Próximos partidos</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="proximo-heading">
+        <h2 id="proximo-heading"><img class="icon" src="img/icons/calendar.png" alt="" aria-hidden="true"> Próximo partido</h2>
+        <dl class="match-summary">
+          <div>
+            <dt>Fecha</dt>
+            <dd>05/09/2026</dd>
+          </div>
+          <div>
+            <dt>Hora</dt>
+            <dd>18:30</dd>
+          </div>
+          <div>
+            <dt>Cancha</dt>
+            <dd>Cancha cubierta</dd>
+          </div>
+          <div>
+            <dt>Compañero</dt>
+            <dd>Iker Zubizarreta</dd>
+          </div>
+          <div>
+            <dt>Equipo rival</dt>
+            <dd>Unai Larrañaga / Jon Aramburu</dd>
+          </div>
+          <div>
+            <dt>Tantos</dt>
+            <dd>A 16 tantos</dd>
+          </div>
+        </dl>
+        <p><a href="partidos.html">Ver todos los partidos &rarr;</a></p>
+      </section>
+
+      <section aria-labelledby="resultados-heading">
+        <h2 id="resultados-heading"><img class="icon" src="img/icons/history.png" alt="" aria-hidden="true"> Últimos resultados</h2>
+        <div class="table-wrapper">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th scope="col">Fecha</th>
+                <th scope="col">Compañero</th>
+                <th scope="col">Equipo rival</th>
+                <th scope="col">Resultado</th>
+                <th scope="col">Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>28/08/2026</td>
+                <td>Ander Goikoetxea</td>
+                <td>Unai Larrañaga / Xabier Mendizabal</td>
+                <td>16 - 12</td>
+                <td><span class="badge badge-success">Ganado</span></td>
+              </tr>
+              <tr>
+                <td>21/08/2026</td>
+                <td>Unai Larrañaga</td>
+                <td>Jon Aramburu / Iker Zubizarreta</td>
+                <td>9 - 16</td>
+                <td><span class="badge badge-danger">Perdido</span></td>
+              </tr>
+              <tr>
+                <td>14/08/2026</td>
+                <td>Jon Aramburu</td>
+                <td>Iker Zubizarreta / Xabier Mendizabal</td>
+                <td>16 - 14</td>
+                <td><span class="badge badge-success">Ganado</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <footer>
+        <p>&copy; 2026 Club Frontón Los Vascos. Todos los derechos reservados.</p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
