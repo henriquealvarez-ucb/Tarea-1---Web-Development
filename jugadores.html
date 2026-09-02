@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jugadores - Club de Frontón</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-layout">
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-logo"><img src="img/icons/logo.png" alt="" aria-hidden="true"></span>
+        <span>
+          Club de Frontón
+        </span>
+      </div>
+      <nav aria-label="Navegación principal">
+        <ul>
+          <li><a href="dashboard.html"><img class="icon icon-light" src="img/icons/dashboard.png" alt="" aria-hidden="true"> Panel principal</a></li>
+          <li><a href="jugadores.html" aria-current="page"><img class="icon icon-light" src="img/icons/group.png" alt="" aria-hidden="true"> Jugadores</a></li>
+          <li><a href="partidos.html"><img class="icon icon-light" src="img/icons/raquet.png" alt="" aria-hidden="true"> Partidos</a></li>
+        </ul>
+      </nav>
+      <div class="logout">
+        <a href="index.html">Cerrar sesión</a>
+      </div>
+    </aside>
+
+    <main class="content">
+      <div class="page-header">
+        <div>
+          <h1>Jugadores</h1>
+          <p>Listado de socios registrados en el club</p>
+        </div>
+        <a href="jugador-form.html" class="btn btn-primary"><img class="icon icon-light" src="img/icons/add.png" alt="" aria-hidden="true"> Nuevo jugador</a>
+      </div>
+
+      <section aria-labelledby="listado-jugadores">
+        <h2 id="listado-jugadores" class="visually-hidden">Listado de jugadores</h2>
+        <div class="table-wrapper">
+          <table class="data-table">
+            <caption>6 jugadores registrados</caption>
+            <thead>
+              <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Categoría</th>
+                <th scope="col">Mano</th>
+                <th scope="col">Ranking</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Henrique Alvarez</td>
+                <td>Primera</td>
+                <td>Diestra</td>
+                <td>3°</td>
+                <td><span class="badge badge-success">Activo</span></td>
+                <td class="actions-cell">
+                  <a class="btn btn-secondary btn-sm" href="jugador-form.html?id=1">Editar</a>
+                  <a class="btn btn-danger btn-sm" href="jugadores.html">Eliminar</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Juan Pérez</td>
+                <td>Primera</td>
+                <td>Zurda</td>
+                <td>5°</td>
+                <td><span class="badge badge-success">Activo</span></td>
+                <td class="actions-cell">
+                  <a class="btn btn-secondary btn-sm" href="jugador-form.html?id=2">Editar</a>
+                  <a class="btn btn-danger btn-sm" href="jugadores.html">Eliminar</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Carlos Gómez</td>
+                <td>Segunda</td>
+                <td>Diestra</td>
+                <td>9°</td>
+                <td><span class="badge badge-success">Activo</span></td>
+                <td class="actions-cell">
+                  <a class="btn btn-secondary btn-sm" href="jugador-form.html?id=3">Editar</a>
+                  <a class="btn btn-danger btn-sm" href="jugadores.html">Eliminar</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Luis Fernández</td>
+                <td>Primera</td>
+                <td>Diestra</td>
+                <td>2°</td>
+                <td><span class="badge badge-warning">Lesionado</span></td>
+                <td class="actions-cell">
+                  <a class="btn btn-secondary btn-sm" href="jugador-form.html?id=4">Editar</a>
+                  <a class="btn btn-danger btn-sm" href="jugadores.html">Eliminar</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Pedro Ramírez</td>
+                <td>Tercera</td>
+                <td>Zurda</td>
+                <td>14°</td>
+                <td><span class="badge badge-neutral">Inactivo</span></td>
+                <td class="actions-cell">
+                  <a class="btn btn-secondary btn-sm" href="jugador-form.html?id=5">Editar</a>
+                  <a class="btn btn-danger btn-sm" href="jugadores.html">Eliminar</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Diego Torres</td>
+                <td>Infantil</td>
+                <td>Diestra</td>
+                <td>21°</td>
+                <td><span class="badge badge-success">Activo</span></td>
+                <td class="actions-cell">
+                  <a class="btn btn-secondary btn-sm" href="jugador-form.html?id=6">Editar</a>
+                  <a class="btn btn-danger btn-sm" href="jugadores.html">Eliminar</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <footer>
+        <p>&copy; 2026 Club de Frontón. Todos los derechos reservados.</p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
