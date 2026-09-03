@@ -477,6 +477,7 @@ textarea:focus {
   color: var(--color-danger);
 }
 
+/* Estilos de jugador-form(jugador-form.html) */
 /* Estilos de jugadores(jugadores.html) */
 
 .page-header {
@@ -489,6 +490,36 @@ textarea:focus {
 .page-header p {
   color: var(--color-text-light);
   margin: 0.25rem 0 0;
+}
+
+.form-page form {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--spacing-lg);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.radio-group {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-weight: normal;
+}
+
+.form-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-lg);
 }
 
 .data-table caption {
