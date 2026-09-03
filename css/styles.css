@@ -478,6 +478,7 @@ textarea:focus {
 }
 
 /* Estilos de jugador-form(jugador-form.html) */
+/* Estilos de jugadores(jugadores.html) */
 
 .page-header {
   display: flex;
@@ -521,6 +522,29 @@ textarea:focus {
   margin-top: var(--spacing-lg);
 }
 
+.data-table caption {
+  text-align: left;
+  padding: var(--spacing-md);
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.actions-cell {
+  display: flex;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.badge-warning {
+  background-color: #fbf1de;
+  color: var(--color-warning);
+}
+
+.badge-neutral {
+  background-color: var(--color-bg);
+  color: var(--color-text-light);
+}
+
 .btn-secondary {
   background-color: var(--color-surface);
   color: var(--color-text);
@@ -529,6 +553,21 @@ textarea:focus {
 
 .btn-secondary:hover {
   background-color: var(--color-bg);
+}
+
+.btn-danger {
+  background-color: var(--color-surface);
+  color: var(--color-danger);
+  border-color: var(--color-danger);
+}
+
+.btn-danger:hover {
+  background-color: #fbe9e8;
+}
+
+.btn-sm {
+  padding: 0.3rem 0.7rem;
+  font-size: 0.8rem;
 }
 
 /* Responsive */
