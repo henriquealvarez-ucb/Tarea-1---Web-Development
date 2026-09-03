@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrar partido - Club de Frontón</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app-layout">
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-logo"><img src="img/icons/logo.png" alt="" aria-hidden="true"></span>
+        <span>
+          Club de Frontón
+        </span>
+      </div>
+      <nav aria-label="Navegación principal">
+        <ul>
+          <li><a href="dashboard.html"><img class="icon icon-light" src="img/icons/dashboard.png" alt="" aria-hidden="true"> Panel principal</a></li>
+          <li><a href="jugadores.html"><img class="icon icon-light" src="img/icons/group.png" alt="" aria-hidden="true"> Jugadores</a></li>
+          <li><a href="partidos.html" aria-current="page"><img class="icon icon-light" src="img/icons/raquet.png" alt="" aria-hidden="true"> Partidos</a></li>
+        </ul>
+      </nav>
+      <div class="logout">
+        <a href="index.html">Cerrar sesión</a>
+      </div>
+    </aside>
+
+    <main class="content form-page">
+      <div class="page-header">
+        <div>
+          <h1>Registrar partido</h1>
+          <p>Programa un nuevo partido de frontón por parejas (2 contra 2), a un máximo de 16 tantos</p>
+        </div>
+      </div>
+
+      <form action="partidos.html" method="get">
+        <fieldset>
+          <legend><img class="icon" src="img/icons/calendar.png" alt="" aria-hidden="true"> Datos del partido</legend>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="fecha">Fecha</label>
+              <input type="date" id="fecha" name="fecha" required>
+            </div>
+            <div class="form-group">
+              <label for="hora">Hora</label>
+              <input type="time" id="hora" name="hora" required>
+            </div>
+            <div class="form-group">
+              <label for="cancha">Cancha</label>
+              <select id="cancha" name="cancha" required>
+                <option value="cancha-1">Cancha 1</option>
+                <option value="cancha-2">Cancha 2</option>
+                <option value="cancha-cubierta">Cancha cubierta</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="categoria">Categoría</label>
+              <select id="categoria" name="categoria" required>
+                <option value="primera">Primera</option>
+                <option value="segunda">Segunda</option>
+                <option value="tercera">Tercera</option>
+                <option value="infantil">Infantil</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend><img class="icon" src="img/icons/group.png" alt="" aria-hidden="true"> Equipo 1</legend>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="equipo1-jugador1">Jugador 1</label>
+              <select id="equipo1-jugador1" name="equipo1-jugador1" required>
+                <option value="">Selecciona un jugador</option>
+                <option value="1">Henrique Alvarez</option>
+                <option value="2">Juan Pérez</option>
+                <option value="3">Carlos Gómez</option>
+                <option value="4">Luis Fernández</option>
+                <option value="5">Pedro Ramírez</option>
+                <option value="6">Diego Torres</option>
+              </select>
+              <p class="hint">Consulta el <a href="jugadores.html">listado de jugadores</a> para ver más datos.</p>
+            </div>
+            <div class="form-group">
+              <label for="equipo1-jugador2">Jugador 2</label>
+              <select id="equipo1-jugador2" name="equipo1-jugador2" required>
+                <option value="">Selecciona un jugador</option>
+                <option value="1">Henrique Alvarez</option>
+                <option value="2">Juan Pérez</option>
+                <option value="3">Carlos Gómez</option>
+                <option value="4">Luis Fernández</option>
+                <option value="5">Pedro Ramírez</option>
+                <option value="6">Diego Torres</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend><img class="icon" src="img/icons/group.png" alt="" aria-hidden="true"> Equipo 2</legend>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="equipo2-jugador1">Jugador 1</label>
+              <select id="equipo2-jugador1" name="equipo2-jugador1" required>
+                <option value="">Selecciona un jugador</option>
+                <option value="1">Henrique Alvarez</option>
+                <option value="2">Juan Pérez</option>
+                <option value="3">Carlos Gómez</option>
+                <option value="4">Luis Fernández</option>
+                <option value="5">Pedro Ramírez</option>
+                <option value="6">Diego Torres</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="equipo2-jugador2">Jugador 2</label>
+              <select id="equipo2-jugador2" name="equipo2-jugador2" required>
+                <option value="">Selecciona un jugador</option>
+                <option value="1">Henrique Alvarez</option>
+                <option value="2">Juan Pérez</option>
+                <option value="3">Carlos Gómez</option>
+                <option value="4">Luis Fernández</option>
+                <option value="5">Pedro Ramírez</option>
+                <option value="6">Diego Torres</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend><img class="icon" src="img/icons/checked.png" alt="" aria-hidden="true"> Resultado</legend>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="tantos-equipo1">Tantos equipo 1</label>
+              <input type="number" id="tantos-equipo1" name="tantos-equipo1" min="0" max="16" placeholder="0-16">
+            </div>
+            <div class="form-group">
+              <label for="tantos-equipo2">Tantos equipo 2</label>
+              <input type="number" id="tantos-equipo2" name="tantos-equipo2" min="0" max="16" placeholder="0-16">
+            </div>
+            <div class="form-group">
+              <label for="estado">Estado</label>
+              <select id="estado" name="estado" required>
+                <option value="programado">Programado</option>
+                <option value="jugado">Jugado</option>
+                <option value="cancelado">Cancelado</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Guardar partido</button>
+          <a href="partidos.html" class="btn btn-secondary">Cancelar</a>
+        </div>
+      </form>
+
+      <footer>
+        <p>&copy; 2026 Club de Frontón. Todos los derechos reservados.</p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

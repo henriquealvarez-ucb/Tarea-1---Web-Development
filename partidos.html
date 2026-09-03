@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Partidos - Club de Frontón</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app-layout">
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-logo"><img src="img/icons/logo.png" alt="" aria-hidden="true"></span>
+        <span>
+          Club de Frontón
+        </span>
+      </div>
+      <nav aria-label="Navegación principal">
+        <ul>
+          <li><a href="dashboard.html"><img class="icon icon-light" src="img/icons/dashboard.png" alt="" aria-hidden="true"> Panel principal</a></li>
+          <li><a href="jugadores.html"><img class="icon icon-light" src="img/icons/group.png" alt="" aria-hidden="true"> Jugadores</a></li>
+          <li><a href="partidos.html" aria-current="page"><img class="icon icon-light" src="img/icons/raquet.png" alt="" aria-hidden="true"> Partidos</a></li>
+        </ul>
+      </nav>
+      <div class="logout">
+        <a href="index.html">Cerrar sesión</a>
+      </div>
+    </aside>
+
+    <main class="content">
+      <div class="page-header">
+        <div>
+          <h1>Partidos</h1>
+          <p>Partidos de frontón por parejas (2 contra 2), a un máximo de 16 tantos</p>
+        </div>
+        <a href="partido-form.html" class="btn btn-primary"><img class="icon icon-light" src="img/icons/add.png" alt="" aria-hidden="true"> Nuevo partido</a>
+      </div>
+
+      <section aria-labelledby="listado-partidos">
+        <h2 id="listado-partidos" class="visually-hidden">Listado de partidos</h2>
+        <div class="table-wrapper">
+          <table class="data-table">
+            <caption>5 partidos registrados</caption>
+            <thead>
+              <tr>
+                <th scope="col">Fecha</th>
+                <th scope="col">Equipo 1</th>
+                <th scope="col">Equipo 2</th>
+                <th scope="col">Cancha</th>
+                <th scope="col">Resultado</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>05/09/2026</td>
+                <td><a href="jugadores.html">Henrique Alvarez</a> / <a href="jugadores.html">Juan Pérez</a></td>
+                <td><a href="jugadores.html">Carlos Gómez</a> / <a href="jugadores.html">Luis Fernández</a></td>
+                <td>Cancha cubierta</td>
+                <td>&mdash;</td>
+                <td><span class="badge badge-warning">Programado</span></td>
+                <td class="actions-cell">
+                  <a class="btn btn-secondary btn-sm" href="partido-form.html?id=1">Editar</a>
+                  <a class="btn btn-danger btn-sm" href="partidos.html">Eliminar</a>
+                </td>
+              </tr>
+              <tr>
+                <td>28/08/2026</td>
+                <td><a href="jugadores.html">Henrique Alvarez</a> / <a href="jugadores.html">Pedro Ramírez</a></td>
+                <td><a href="jugadores.html">Carlos Gómez</a> / <a href="jugadores.html">Diego Torres</a></td>
+                <td>Cancha 1</td>
+                <td>16 - 12</td>
+                <td><span class="badge badge-success">Jugado</span></td>
+                <td class="actions-cell">
+                  <a class="btn btn-secondary btn-sm" href="partido-form.html?id=2">Editar</a>
+                  <a class="btn btn-danger btn-sm" href="partidos.html">Eliminar</a>
+                </td>
+              </tr>
+              <tr>
+                <td>21/08/2026</td>
+                <td><a href="jugadores.html">Luis Fernández</a> / <a href="jugadores.html">Juan Pérez</a></td>
+                <td><a href="jugadores.html">Henrique Alvarez</a> / <a href="jugadores.html">Carlos Gómez</a></td>
+                <td>Cancha 2</td>
+                <td>16 - 9</td>
+                <td><span class="badge badge-success">Jugado</span></td>
+                <td class="actions-cell">
+                  <a class="btn btn-secondary btn-sm" href="partido-form.html?id=3">Editar</a>
+                  <a class="btn btn-danger btn-sm" href="partidos.html">Eliminar</a>
+                </td>
+              </tr>
+              <tr>
+                <td>14/08/2026</td>
+                <td><a href="jugadores.html">Juan Pérez</a> / <a href="jugadores.html">Diego Torres</a></td>
+                <td><a href="jugadores.html">Henrique Alvarez</a> / <a href="jugadores.html">Luis Fernández</a></td>
+                <td>Cancha cubierta</td>
+                <td>14 - 16</td>
+                <td><span class="badge badge-success">Jugado</span></td>
+                <td class="actions-cell">
+                  <a class="btn btn-secondary btn-sm" href="partido-form.html?id=4">Editar</a>
+                  <a class="btn btn-danger btn-sm" href="partidos.html">Eliminar</a>
+                </td>
+              </tr>
+              <tr>
+                <td>09/08/2026</td>
+                <td><a href="jugadores.html">Pedro Ramírez</a> / <a href="jugadores.html">Carlos Gómez</a></td>
+                <td><a href="jugadores.html">Diego Torres</a> / <a href="jugadores.html">Juan Pérez</a></td>
+                <td>Cancha 1</td>
+                <td>&mdash;</td>
+                <td><span class="badge badge-danger">Cancelado</span></td>
+                <td class="actions-cell">
+                  <a class="btn btn-secondary btn-sm" href="partido-form.html?id=5">Editar</a>
+                  <a class="btn btn-danger btn-sm" href="partidos.html">Eliminar</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <footer>
+        <p>&copy; 2026 Club de Frontón. Todos los derechos reservados.</p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
